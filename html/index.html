@@ -20,8 +20,8 @@
 <body>
     <!-------------------------------------------------- HEADER --------------------------------------------------->
     <header>
-        <img class="logoheader" width="30" src="/imgl/icone-logo.png" alt="icone-logo">
-        <nav class="header-list">
+        <img class="logoheader" width="30" src="/imgl/icone-logo-azulEscuro.png" alt="icone-logo">
+        <nav class="lista-header">
             <ul>
                 <li><a href="#" id="inic">Início</a></li>
                 <li><a href="#func" id="func">Funcionalidades</a></li>
@@ -29,104 +29,97 @@
                 <li><a href="#sobre" id="sobre">Sobre</a></li>
             </ul>
         </nav>
-        <div class="buttons-header">
-            <!-- <button class="cadastrar" type="button">Cadastrar</button> ----REVER--------- -->
+        <div class="button-header">
             <button class="entrar" type="button">Login</button>
-            <img id="perfil" width="25" src="/imgl/icons8-profile-64.png" alt="perfil">
+            <img id="perfil" width="25" src="/imgl/loginpessoa.png" alt="perfil">
         </div>
     </header>
 
-    <!-------------------------------------------------- MAIN ----------------------------------------------------------->
+    <!-------------------------------------------------- MAIN ------------------------------------------------------->
 
     <main>
         <section class="main-content">
-            <section class="texto-princ">
-                <div class="main-text">
-                    <h1>Conheça o <span id="calbon">Calbon!</span></h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <button class="saibamais-botton" type="button">Fale conosco</button>
-            </section>
-            </div>
-
-        </section>
-
-        <!--------------------------------------------------- ESCOPOS-MAIN ---------------------------------------------------------->
-
-        <!-- ESCOPOS-MAIN -->
-        <section class="escopos">
-            <div class="scopes-header">
-                <h2>Os 3 Escopos de Emissão</h2>
-                <p>Classificação internacional que organiza as emissões de GEE em três categorias para facilitar o
-                    monitoramento e gestão.</p>
-            </div>
-            <div class="cardescopos">
-                <h2>01</h2>
-                <p>Emissões diretas</p>
-                <div class="detalhes">
-                    <p>Incluem emissões de fontes que pertencem ou são controladas pela empresa, como veículos,
-                        caldeiras e processos industriais.</p>
-                </div>
-            </div>
-
-            <div class="cardescopos">
-                <h2>02</h2>
-                <p>Emissões indiretas de energia</p>
-                <div class="detalhes">
-                    <p>Referem-se às emissões de GEE associadas à geração de eletricidade, calor ou vapor adquiridos
-                        pela empresa.</p>
-                </div>
-            </div>
-
-            <div class="cardescopos">
-                <h2>03</h2>
-                <p>Outras emissões indiretas</p>
-                <div class="detalhes">
-                    <p>Envolvem emissões que ocorrem fora da empresa, mas estão relacionadas às suas atividades, como
-                        transporte, viagens de negócios e cadeia de suprimentos.</p>
-                </div>
+            <div class="texto-main">
+                <h1>Conheça o <span id="calbon">Calbon!</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <button class="fale-conosco" type="button">Fale conosco</button>
             </div>
         </section>
 
+        <!--------------------------------------------------- ESCOPOS ---------------------------------------------------------->
 
+        <section class="escopos-section">
+            <h2>Escopos de Emissão de <span>Carbono</span></h2>
+            <p class="subtitulo"> Entenda os três níveis de emissões de gases de efeito estufa e como eles impactam as
+                organizações.</p>
+
+            <div class="escopos-tabs">
+                <button class="tab active" data-tab="escopo1">Escopo 1</button>
+                <button class="tab" data-tab="escopo2">Escopo 2</button> <!--SE NECESSÁRIO trocar a classe "tab" -->
+                <button class="tab" data-tab="escopo3">Escopo 3</button>
+            </div>
+
+            <div class="escopos-content">
+                <div class="tab-content active" id="escopo1">
+                    <h3>Escopo 1 - Emissões Diretas</h3>
+                    <p>Emissões provenientes de fontes que pertencem ou são controladas pela organização, como veículos
+                        próprios, caldeiras, geradores e processos industriais.</p>
+                </div>
+
+                <div class="tab-content" id="escopo2">
+                    <h3>Escopo 2 - Emissões Indiretas de Energia</h3>
+                    <p>Emissões associadas à geração de energia elétrica, vapor, aquecimento e resfriamento adquiridos
+                        pela empresa de terceiros.</p>
+                </div>
+
+                <div class="tab-content" id="escopo3">
+                    <h3>Escopo 3 - Outras Emissões Indiretas</h3>
+                    <p>Inclui todas as outras emissões indiretas que ocorrem na cadeia de valor, como transporte de
+                        produtos, uso de bens vendidos, viagens a negócios e descarte de resíduos.</p>
+                </div>
+
+            </div>
+        </section>
     </main>
     <!-- --------------------------------------------- PLANOS ------------------------------------------------->
 
-    <!-- HTML -->
-    <section id="planos" class="pricing-section">
+    <section id="planos" class="section-planos">
+
         <div class="container">
             <h2>Nossos<span> Planos</span></h2>
-            <p class="subtitle">Desbloqueie possibilidades infinitas</p>
+            <p class="subtitulo">Desbloqueie possibilidades infinitas</p>
 
-            <div class="pricing-cards">
-                <!-- Basic Plan -->
-                <div class="card basic">
-                    <h3 class="verde">Starter</h3>
-                    <p>Maximo de 50 funcionários ativos.</p>
-                    <div class="price"><span class="verde">$</span>250</div>
-                    <button class="btn">Comece agora</button>
+            <div class="planos-card">
+
+                <!-- Plano Starter  -->
+                <div class="card starter">
+                    <h3 class="titulo-verde">Starter</h3>
+                    <p>Máximo de 50 funcionários ativos.</p>
+                    <div class="preco"><span class="titulo-verde">R$</span>250</div>
+                    <button class="btn-preco">Comece agora</button>
                     <ul>
-                        <li class="verde">para quem está começando a mapear seus fornecedores.</li>
+                        <li>para quem está começando a mapear seus fornecedores.</li>
                     </ul>
                 </div>
-               <!-- Premium Plan -->
-                <div class="card premium">
+
+                <!-- Plano Growth -->
+                <div class="card growth">
                     <span class="popular">Popular</span>
-                    <h3 class="lilas">Growth</h3>
-                    <p>Maximo de 150 funcionários ativos.</p>
-                    <div class="price"><span class="lilas">$</span>500</div>
-                    <button class="btn btn-primary">Comece agora</button>
+                    <h3 class="titulo-lilas">Growth</h3>
+                    <p>Máximo de 150 funcionários ativos.</p>
+                    <div class="preco"><span class="titulo-lilas">R$</span>500</div>
+                    <button class="btn-popular">Comece agora</button>
                     <ul>
                         <li>Ideal para empresas em crescimento</li>
                     </ul>
                 </div>
-                <!-- Enterprise Plan -->
+
+                <!-- Plano enterprise -->
                 <div class="card enterprise">
-                    <h3 class="azul">Enterprise</h3>
+                    <h3 class="titulo-azul">Enterprise</h3>
                     <p>Ilimitado + auditoria.</p>
-                    <div class="price">Sob consulta</div>
+                    <div class="preco">Sob consulta</div>
                     <button class="btn consulta">Entre em contato</button>
                     <ul>
                         <li>Para grandes organizações, com acesso ilimitado, auditorias completas e um plano sob medida
@@ -134,85 +127,13 @@
                     </ul>
                 </div>
 
-
-
-
             </div>
         </div>
     </section>
 
-
     <!----------------------------------------------- FOOTER ------------------------------------------------->
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-columns"> <!----REVERRRRR - QUANTIDADE DE CLASSES---->
-                <div class="footer-col">
-                    <div class="footer-logo">
-                        <img src="/imgl/logo.png" alt="EmissCarbon Logo">
-                    </div>
-                    <p>Plataforma completa para gestão de pegada de carbono empresarial.</p>
-                </div>
 
-                <div class="footer-col">
-                    <h4>Produto</h4>
-                    <ul>
-                        <li>Funcionalidades</li>
-                        <li>Planos</li>
-                        <li>Integrações</li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Empresa</h4>
-                    <ul>
-                        <li>Sobre nós</li>
-                        <li>Blog</li>
-                        <li>Carreiras</li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Contato</h4>
-                    <ul>
-                        <li>contato@calbon.com</li>
-                        <li>(11) 9999-9999</li>
-                        <li>São Paulo, SP</li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="footer-divider">
-            <div class="footer-bottom">
-                <p>&copy; 2024 EmissCarbon. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const header = document.querySelector("header");
-
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 50) {
-                    header.classList.add("header-scrolled");
-                } else {
-                    header.classList.remove("header-scrolled");
-                }
-            });
-        });
-    </script>
-    <script>
-        const cardescopos = document.querySelectorAll('.cardescopos');
-
-        cardescopos.forEach(card => {
-            card.addEventListener('click', () => {
-                // Fecha todos os cards
-                cardescopos.forEach(c => c.classList.remove('active'));
-                // Abre o clicado
-                card.classList.toggle('active');
-            });
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
